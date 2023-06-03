@@ -8,7 +8,7 @@ import { GiQuillInk} from 'react-icons/gi';
 
 const Header: React.FC = () => {
     return (
-        <div className='sm: h-auto md: h-2/5 lg: h-2/5'>
+        <div className='sm:h-auto md:h-2/5 lg:h-2/5 border-black border-b-4'>
             <NavBar routes={[
                 { name: 'Home', icon: FaHome, redirect: '/' },
                 { name: 'Projects', icon: BsFillLightningChargeFill, redirect: '/projects' },
