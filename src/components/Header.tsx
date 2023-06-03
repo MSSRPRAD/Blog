@@ -5,23 +5,17 @@ import { BsFillLightningChargeFill } from 'react-icons/bs';
 import { GiQuillInk} from 'react-icons/gi';
 // import '../App.css';
 
-interface HeaderProps {
-    title: string;
-}
 
-const Header: React.FC<HeaderProps> = ({ title }) => {
+const Header: React.FC = () => {
     return (
-        <div className=''>
-            <div className='p-5 mb-10 mt-0'>
-                <NavBar routes={[
-                    { name: 'Home', icon: FaHome },
-                    { name: 'Projects', icon: BsFillLightningChargeFill },
-                    { name: 'Blog', icon: GiQuillInk },
-                    { name: 'About', icon: FaUser },
-                    { name: 'Contact', icon: FaEnvelope },
-                ]} />
-            </div>
-            <h1 className="font-weight: 900 font-bold text-center text-4xl">{title}</h1>
+        <div className='sm: h-auto md: h-2/5 lg: h-2/5'>
+            <NavBar routes={[
+                { name: 'Home', icon: FaHome, redirect: '/' },
+                { name: 'Projects', icon: BsFillLightningChargeFill, redirect: '/projects' },
+                { name: 'Blog', icon: GiQuillInk, redirect: '/blog' },
+                { name: 'About', icon: FaUser, redirect: '/about' },
+                { name: 'Contact', icon: FaEnvelope, redirect: '/contact' },
+            ]} />
         </div>
     );
 }
