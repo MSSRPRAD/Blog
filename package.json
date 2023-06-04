@@ -1,5 +1,5 @@
 {
-  "homepage": "https://mssrprad.github.io/",
+  "homepage": "http://mssrprad.github.io/",
   "name": "blog",
   "private": false,
   "version": "0.0.0",
@@ -10,7 +10,7 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "preview": "vite previewabout"
   },
   "dependencies": {
     "react": "^18.2.0",

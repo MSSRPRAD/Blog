@@ -7,7 +7,7 @@ const Blog: React.FC = () => {
         <div className='Home bg-inherit'>
             <Header/>
             <div className='p-10'>
-                todo!()
+                todo!(blog)
             </div>
         </div>
         
