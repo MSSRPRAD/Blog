@@ -7,7 +7,7 @@ const Project: React.FC = () => {
     return (
         <div className='Home bg-inherit'>
             <Header/>
-            <h1 className='text-4xl text-black text-center m-5'>Projects</h1>
+            <h1 className='text-6xl text-center m-5'>Projects</h1>
             <div className='flex flex-row flex-wrap justify-center h-2/5'>
                 <ProjectCard name="IndicScriptSwap" description='An application that transliterates text between various Indic and Roman scripts quickly. The program is compiled to wasm for a demo and is available as a Rust Crate' techStack={['Rust', 'Wasm']} githubUrl='https://github.com/MSSRPRAD/IndicScriptSwap' note='None' />
                 <ProjectCard name="SanskritMetresRust" description='An application that Identifies the scheme of a Sanskrit Verse. Identifies both matra based and vrtta based metres. Also uses levenshtein distance to identify the closest scheme for vrtta based metres.' techStack={['Rust']} githubUrl='https://github.com/MSSRPRAD/SanskritMetresRust' note='Needs to be rewritten as code is too unorganized' />

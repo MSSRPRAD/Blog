@@ -10,11 +10,11 @@ const Header: React.FC = () => {
     return (
         <div className='bg-gradient-to-r from-cyan-500 to-blue-500 sm:h-auto md:h-2/5 lg:h-2/5 border-black border-b-4'>
             <NavBar routes={[
-                { name: 'Home', icon: FaHome, redirect: '/' },
-                { name: 'Projects', icon: BsFillLightningChargeFill, redirect: '/projects' },
-                { name: 'Blog', icon: GiQuillInk, redirect: '/blog' },
-                { name: 'About', icon: FaUser, redirect: '/about' },
-                { name: 'Contact', icon: FaEnvelope, redirect: '/contact' },
+                { name: 'Home', icon: FaHome, redirect: '/Blog/' },
+                { name: 'About', icon: FaUser, redirect: '/Blog/about' },
+                { name: 'Projects', icon: BsFillLightningChargeFill, redirect: '/Blog/projects' },
+                { name: 'Blog', icon: GiQuillInk, redirect: '/Blog/blog' },
+                { name: 'Contact', icon: FaEnvelope, redirect: '/Blog/contact' },
             ]} />
         </div>
     );
