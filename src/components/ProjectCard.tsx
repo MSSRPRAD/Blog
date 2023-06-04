@@ -10,7 +10,7 @@ interface ProjectCardProps {
 
 const ProjectCard: React.FC<ProjectCardProps> = (props) => {
     return (
-      <div className="bg-cyan-200 rounded-2xl overflow-auto m-5 lg:w-2/5">
+      <div className="bg-cyan-200 rounded-2xl overflow-auto m-5 lg:w-2/5 border-black border-solid">
         <div className="p-4">
           <h3 className="text-2xl text-center font-semibold text-violet-800">{props.name}</h3>
           <p className="">{props.description}</p>
