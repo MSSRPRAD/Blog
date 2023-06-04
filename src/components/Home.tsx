@@ -5,7 +5,7 @@ import './Home.css'
 
 const Home: React.FC = () => {
     return (
-        <div className='Home'>
+        <div className='Home bg-inherit'>
             <Header/>
             <div className='p-10'>
                 <h1 className='text-6xl text-center mb-10'>Welcome to my website!</h1>

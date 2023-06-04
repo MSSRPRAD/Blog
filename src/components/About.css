@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+p {
+    @apply text-2xl;
+    @apply py-5;
+    @apply px-10;
+}
+
+li {
+    @apply p-2;
+    @apply mx-20;
+}
