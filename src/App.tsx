@@ -7,9 +7,17 @@ import Project from './components/Project';
 import Contact from './components/Contact';
 
 function App() {
+  // Assuming you have imported the required dependencies for the Router component
+
+  const basename = import.meta.env.DEV ? '/' : '/Blog';
+
+  // Make sure that basename is of type string or undefined
+  const routerProps = basename ? { basename } : {};
+
+
   return (
     <>
-      <Router>
+      <Router {...routerProps}>
         <Routes>
           <Route path="/Blog/" element={<Home />} />
           <Route path="/Blog/about" element={<About />} />
