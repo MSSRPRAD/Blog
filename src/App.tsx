@@ -9,7 +9,7 @@ import Contact from './components/Contact';
 function App() {
   // Assuming you have imported the required dependencies for the Router component
 
-  const basename = import.meta.env.DEV ? '/' : '/Blog';
+  const basename = import.meta.env.DEV ? '/Blog' : '/';
 
   // Make sure that basename is of type string or undefined
   const routerProps = basename ? { basename } : {};
